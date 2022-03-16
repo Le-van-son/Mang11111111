@@ -8,13 +8,15 @@
 <script>
     let x = +prompt("nhap")
     let A = [1, 3, 5, 6, 8, 5, 4]
+    count=0
     for (let i = 0; i <= 6; i++) {
         if (x === A[i]) {
             document.write("vị trí của x là " + i + " <br> ")
-        } else if (i = 6) {
-            document.write("-1")
+            count++
         }
     }
+    if (count == 0)
+        document.write("-1")
 
 </script>
 </body>
